@@ -1,0 +1,391 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 14 18
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:GND #PWR0179
+U 1 1 60F8BAF3
+P 2500 3250
+F 0 "#PWR0179" H 2500 3000 50  0001 C CNN
+F 1 "GND" H 2505 3077 50  0000 C CNN
+F 2 "" H 2500 3250 50  0001 C CNN
+F 3 "" H 2500 3250 50  0001 C CNN
+	1    2500 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C50
+U 1 1 60F8BE98
+P 3650 3100
+F 0 "C50" H 3765 3146 50  0000 L CNN
+F 1 "2.2nF" H 3765 3055 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3688 2950 50  0001 C CNN
+F 3 "~" H 3650 3100 50  0001 C CNN
+	1    3650 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C51
+U 1 1 60F8C45C
+P 4100 3100
+F 0 "C51" H 4215 3146 50  0000 L CNN
+F 1 "2.2nF" H 4215 3055 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4138 2950 50  0001 C CNN
+F 3 "~" H 4100 3100 50  0001 C CNN
+	1    4100 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 2950 3650 2850
+Wire Wire Line
+	3650 2850 3200 2850
+Wire Wire Line
+	3200 2750 4100 2750
+Wire Wire Line
+	4100 2750 4100 2950
+$Comp
+L power:GND #PWR0180
+U 1 1 60F8C781
+P 3650 3250
+F 0 "#PWR0180" H 3650 3000 50  0001 C CNN
+F 1 "GND" H 3655 3077 50  0000 C CNN
+F 2 "" H 3650 3250 50  0001 C CNN
+F 3 "" H 3650 3250 50  0001 C CNN
+	1    3650 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0181
+U 1 1 60F8C9BD
+P 4100 3250
+F 0 "#PWR0181" H 4100 3000 50  0001 C CNN
+F 1 "GND" H 4105 3077 50  0000 C CNN
+F 2 "" H 4100 3250 50  0001 C CNN
+F 3 "" H 4100 3250 50  0001 C CNN
+	1    4100 3250
+	1    0    0    -1  
+$EndComp
+Text HLabel 1800 2350 0    50   Input ~ 0
+SCL
+Text HLabel 1800 2250 0    50   BiDi ~ 0
+SDA
+$Comp
+L power:GND #PWR0182
+U 1 1 60F8CE5F
+P 1700 2950
+F 0 "#PWR0182" H 1700 2700 50  0001 C CNN
+F 1 "GND" H 1705 2777 50  0000 C CNN
+F 2 "" H 1700 2950 50  0001 C CNN
+F 3 "" H 1700 2950 50  0001 C CNN
+	1    1700 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1700 2950 1700 2850
+Wire Wire Line
+	1700 2850 1800 2850
+$Comp
+L power:+3V3 #PWR0183
+U 1 1 60F8D126
+P 2600 1850
+F 0 "#PWR0183" H 2600 1700 50  0001 C CNN
+F 1 "+3V3" H 2615 2023 50  0000 C CNN
+F 2 "" H 2600 1850 50  0001 C CNN
+F 3 "" H 2600 1850 50  0001 C CNN
+	1    2600 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR0184
+U 1 1 60F8D4DE
+P 3500 1200
+F 0 "#PWR0184" H 3500 1050 50  0001 C CNN
+F 1 "+3V3" H 3515 1373 50  0000 C CNN
+F 2 "" H 3500 1200 50  0001 C CNN
+F 3 "" H 3500 1200 50  0001 C CNN
+	1    3500 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0185
+U 1 1 60F8D699
+P 3500 1500
+F 0 "#PWR0185" H 3500 1250 50  0001 C CNN
+F 1 "GND" H 3505 1327 50  0000 C CNN
+F 2 "" H 3500 1500 50  0001 C CNN
+F 3 "" H 3500 1500 50  0001 C CNN
+	1    3500 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C49
+U 1 1 60F8D928
+P 3500 1350
+F 0 "C49" H 3615 1396 50  0000 L CNN
+F 1 "2.2nF" H 3615 1305 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3538 1200 50  0001 C CNN
+F 3 "~" H 3500 1350 50  0001 C CNN
+	1    3500 1350
+	1    0    0    -1  
+$EndComp
+Text HLabel 3200 2250 2    50   Output ~ 0
+INT
+NoConn ~ 3200 2450
+NoConn ~ 3200 2550
+Text HLabel 1800 2450 0    50   Input ~ 0
+ADDR0
+$Comp
+L power:GND #PWR0186
+U 1 1 60F8E894
+P 1450 2950
+F 0 "#PWR0186" H 1450 2700 50  0001 C CNN
+F 1 "GND" H 1455 2777 50  0000 C CNN
+F 2 "" H 1450 2950 50  0001 C CNN
+F 3 "" H 1450 2950 50  0001 C CNN
+	1    1450 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1450 2950 1450 2750
+Wire Wire Line
+	1450 2750 1800 2750
+$Comp
+L power:+3V3 #PWR0187
+U 1 1 60F8ED28
+P 2400 1850
+F 0 "#PWR0187" H 2400 1700 50  0001 C CNN
+F 1 "+3V3" H 2415 2023 50  0000 C CNN
+F 2 "" H 2400 1850 50  0001 C CNN
+F 3 "" H 2400 1850 50  0001 C CNN
+	1    2400 1850
+	1    0    0    -1  
+$EndComp
+Text Notes 1350 950  0    50   ~ 0
+IMU
+$Comp
+L SamacSys_Parts:790 IC?
+U 1 1 60FAA8A6
+P 7050 2450
+AR Path="/60FAA8A6" Ref="IC?"  Part="1" 
+AR Path="/6174CCA3/60FAA8A6" Ref="IC?"  Part="1" 
+AR Path="/60E31AD7/60F8B490/60FAA8A6" Ref="IC6"  Part="1" 
+F 0 "IC6" H 7750 2715 50  0000 C CNN
+F 1 "790" H 7750 2624 50  0000 C CNN
+F 2 "SamacSys_Parts:790" H 8300 2550 50  0001 L CNN
+F 3 "https://cdn-shop.adafruit.com/datasheets/GlobalTop-FGPMMOPA6H-Datasheet-V0A.pdf" H 8300 2450 50  0001 L CNN
+F 4 "GPS Modules Ultimate GPS Module MTK3339 Chipset" H 8300 2350 50  0001 L CNN "Description"
+F 5 "5.2" H 8300 2250 50  0001 L CNN "Height"
+F 6 "Adafruit" H 8300 2150 50  0001 L CNN "Manufacturer_Name"
+F 7 "790" H 8300 2050 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "485-790" H 8300 1950 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.co.uk/ProductDetail/Adafruit/790?qs=GURawfaeGuAcF24Za4dx%252Bw%3D%3D" H 8300 1850 50  0001 L CNN "Mouser Price/Stock"
+F 10 "790" H 8300 1750 50  0001 L CNN "Arrow Part Number"
+F 11 "https://www.arrow.com/en/products/790/adafruit-industries" H 8300 1650 50  0001 L CNN "Arrow Price/Stock"
+	1    7050 2450
+	1    0    0    -1  
+$EndComp
+Text Notes 6350 1100 0    50   ~ 0
+GPS
+Wire Wire Line
+	9450 4200 9450 4300
+Wire Wire Line
+	9450 4300 9450 4600
+Connection ~ 9450 4300
+$Comp
+L SamacSys_Parts:619540-1 J?
+U 1 1 60FBDCA2
+P 9450 4100
+AR Path="/60FBDCA2" Ref="J?"  Part="1" 
+AR Path="/60E31AD7/60F8B490/60FBDCA2" Ref="J5"  Part="1" 
+F 0 "J5" H 9850 4365 50  0000 C CNN
+F 1 "619540-1" H 9850 4274 50  0000 C CNN
+F 2 "SamacSys_Parts:6195401" H 10100 4200 50  0001 L CNN
+F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=showdoc&DocId=Customer+Drawing%7F619540%7FA2%7Fpdf%7FEnglish%7FENG_CD_619540_A2.pdf%7F619540-1" H 10100 4100 50  0001 L CNN
+F 4 "TE Connectivity Right Angle Surface Mount Bulkhead Fitting SMA Connector, Screw Termination" H 10100 4000 50  0001 L CNN "Description"
+F 5 "9.6" H 10100 3900 50  0001 L CNN "Height"
+F 6 "TE Connectivity" H 10100 3800 50  0001 L CNN "Manufacturer_Name"
+F 7 "619540-1" H 10100 3700 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "571-619540-1" H 10100 3600 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.co.uk/ProductDetail/TE-Connectivity/619540-1/?qs=ZH26iPUykMV%2FRt%252BGg21tkA%3D%3D" H 10100 3500 50  0001 L CNN "Mouser Price/Stock"
+F 10 "619540-1" H 10100 3400 50  0001 L CNN "Arrow Part Number"
+F 11 "https://www.arrow.com/en/products/619540-1/te-connectivity" H 10100 3300 50  0001 L CNN "Arrow Price/Stock"
+	1    9450 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10250 4600 10250 4200
+Wire Wire Line
+	10250 4200 10250 4100
+Connection ~ 10250 4200
+Wire Wire Line
+	9850 4600 10250 4600
+Connection ~ 9850 4600
+$Comp
+L power:GND #PWR?
+U 1 1 60FBDCAD
+P 9850 4600
+AR Path="/60FBDCAD" Ref="#PWR?"  Part="1" 
+AR Path="/60E31AD7/60F8B490/60FBDCAD" Ref="#PWR0188"  Part="1" 
+F 0 "#PWR0188" H 9850 4350 50  0001 C CNN
+F 1 "GND" H 9855 4427 50  0000 C CNN
+F 2 "" H 9850 4600 50  0001 C CNN
+F 3 "" H 9850 4600 50  0001 C CNN
+	1    9850 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9450 4600 9850 4600
+Wire Wire Line
+	8450 3350 9000 3350
+Wire Wire Line
+	9000 3350 9000 4100
+Wire Wire Line
+	9000 4100 9450 4100
+$Comp
+L power:+3V3 #PWR0189
+U 1 1 60FC8A92
+P 6900 2300
+F 0 "#PWR0189" H 6900 2150 50  0001 C CNN
+F 1 "+3V3" H 6915 2473 50  0000 C CNN
+F 2 "" H 6900 2300 50  0001 C CNN
+F 3 "" H 6900 2300 50  0001 C CNN
+	1    6900 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6900 2300 6900 2450
+Wire Wire Line
+	6900 2450 7050 2450
+$Comp
+L power:+3V3 #PWR0190
+U 1 1 60FC91EA
+P 8600 1100
+F 0 "#PWR0190" H 8600 950 50  0001 C CNN
+F 1 "+3V3" H 8615 1273 50  0000 C CNN
+F 2 "" H 8600 1100 50  0001 C CNN
+F 3 "" H 8600 1100 50  0001 C CNN
+	1    8600 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0191
+U 1 1 60FC91F0
+P 8600 1400
+F 0 "#PWR0191" H 8600 1150 50  0001 C CNN
+F 1 "GND" H 8605 1227 50  0000 C CNN
+F 2 "" H 8600 1400 50  0001 C CNN
+F 3 "" H 8600 1400 50  0001 C CNN
+	1    8600 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C48
+U 1 1 60FC91F6
+P 8600 1250
+F 0 "C48" H 8715 1296 50  0000 L CNN
+F 1 "100nF" H 8715 1205 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 8638 1100 50  0001 C CNN
+F 3 "~" H 8600 1250 50  0001 C CNN
+	1    8600 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+BATT #PWR0192
+U 1 1 60FC9F07
+P 6700 2600
+F 0 "#PWR0192" H 6700 2450 50  0001 C CNN
+F 1 "+BATT" H 6715 2773 50  0000 C CNN
+F 2 "" H 6700 2600 50  0001 C CNN
+F 3 "" H 6700 2600 50  0001 C CNN
+	1    6700 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6700 2600 6700 2750
+Wire Wire Line
+	6700 2750 7050 2750
+Text HLabel 7050 2850 0    50   Output ~ 0
+GPS_3DFIX
+$Comp
+L power:GND #PWR0193
+U 1 1 60FCACEA
+P 7050 2650
+F 0 "#PWR0193" H 7050 2400 50  0001 C CNN
+F 1 "GND" V 7055 2522 50  0000 R CNN
+F 2 "" H 7050 2650 50  0001 C CNN
+F 3 "" H 7050 2650 50  0001 C CNN
+	1    7050 2650
+	0    1    1    0   
+$EndComp
+NoConn ~ 7050 2950
+NoConn ~ 7050 3050
+$Comp
+L power:GND #PWR0194
+U 1 1 60FCB44A
+P 7050 3150
+F 0 "#PWR0194" H 7050 2900 50  0001 C CNN
+F 1 "GND" V 7055 3022 50  0000 R CNN
+F 2 "" H 7050 3150 50  0001 C CNN
+F 3 "" H 7050 3150 50  0001 C CNN
+	1    7050 3150
+	0    1    1    0   
+$EndComp
+Text HLabel 7050 3250 0    50   Output ~ 0
+GPS_TX
+Text HLabel 7050 3350 0    50   Input ~ 0
+GPS_RX
+$Comp
+L power:GND #PWR0195
+U 1 1 60FCBA3B
+P 8450 3250
+F 0 "#PWR0195" H 8450 3000 50  0001 C CNN
+F 1 "GND" V 8455 3122 50  0000 R CNN
+F 2 "" H 8450 3250 50  0001 C CNN
+F 3 "" H 8450 3250 50  0001 C CNN
+	1    8450 3250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9000 3150 8450 3150
+NoConn ~ 8450 3050
+NoConn ~ 8450 2950
+NoConn ~ 8450 2850
+NoConn ~ 8450 2750
+NoConn ~ 8450 2650
+$Comp
+L power:GND #PWR0196
+U 1 1 60FCDBDC
+P 8450 2550
+F 0 "#PWR0196" H 8450 2300 50  0001 C CNN
+F 1 "GND" V 8455 2422 50  0000 R CNN
+F 2 "" H 8450 2550 50  0001 C CNN
+F 3 "" H 8450 2550 50  0001 C CNN
+	1    8450 2550
+	0    -1   -1   0   
+$EndComp
+NoConn ~ 8450 2450
+Text HLabel 9000 3150 2    50   Output ~ 0
+GPS_PPS
+$Comp
+L Sensor_Motion:MPU-6050 U8
+U 1 1 60F8B5D1
+P 2500 2550
+F 0 "U8" H 2850 1800 50  0000 C CNN
+F 1 "MPU-6050" H 2850 1700 50  0000 C CNN
+F 2 "Sensor_Motion:InvenSense_QFN-24_4x4mm_P0.5mm" H 2500 1750 50  0001 C CNN
+F 3 "https://store.invensense.com/datasheets/invensense/MPU-6050_DataSheet_V3%204.pdf" H 2500 2400 50  0001 C CNN
+	1    2500 2550
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
